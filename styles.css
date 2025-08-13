@@ -254,3 +254,53 @@ body {
     background-color: #43a047;
     transform: translateY(-2px);
 }
+
+/* ... (estilos existentes) ... */
+
+.product-info {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos al centro */
+}
+
+.add-to-cart-btn {
+    display: none; /* Oculta el botón "Agregar" */
+}
+
+/* Nuevos estilos para los controles de cantidad en la lista de productos */
+.quantity-control-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.quantity-control-product .quantity-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    transition: background-color 0.2s ease;
+}
+
+.quantity-control-product .quantity-btn:hover {
+    background-color: #43a047;
+}
+
+.quantity-control-product .quantity {
+    font-weight: 700;
+    font-size: 1.1rem;
+    width: 30px;
+    text-align: center;
+}
+
+/* ... (otros estilos existentes) ... */
