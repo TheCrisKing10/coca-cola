@@ -29,10 +29,17 @@ const products = [
     { id: 127, name: "Monster Green 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero 473ml.webp" },
     { id: 128, name: "Monster White 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero ultra 473ml.webp" },
     { id: 129, name: "Santa Clara Entera 1L (6 pack)", price: 159.00, piecesPerPackage: 6, image: "santa clara entera 1l.webp" },
-    { id: 130, name: "Santa Clara Deslactosada 1L (6 pack)", price: 164.00, piecesPerPackage: 6, image: "santa clara deslactosada 1l.webp" },
-    { id: 131, name: "Tubi-Papa Original (10 pack)", price: 160.50, piecesPerPackage: 10, image: "papa sol original.webp" },
-    { id: 132, name: "Tubi-Papa Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol enchilado.webp" },
-    { id: 133, name: "Tubi-Papa No Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol no enchilado.webp" },
+    { id: 130, name: "Santa Clara Deslactosada 1L (6 pack)", price: 147.00, piecesPerPackage: 6, image: "santa clara deslactosada 1l.webp" },
+    { id: 131, name: "Santa Clara Fresa 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara fresa 180ml.webp" },
+    { id: 132, name: "Santa Clara Vainilla 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara vainilla 180ml.webp" },
+    { id: 133, name: "Santa Clara Chocolate 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara chocolate 180ml.webp" },
+    { id: 134, name: "Santa Clara Capuccino 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara capuccino 180ml.webp" },
+    { id: 135, name: "Tubi-Papa Original (10 pack)", price: 160.50, piecesPerPackage: 10, image: "papa sol original.webp" },
+    { id: 136, name: "Tubi-Papa Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol enchilado.webp" },
+    { id: 137, name: "Tubi-Papa No Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol no enchilado.webp" },
+    { id: 138, name: "Isadora Refritos Bayos 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos bayos.webp" },
+    { id: 139, name: "Isadora Refritos Negros 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos negros.webp" },
+    { id: 140, name: "Isadora Refritos Peruanos 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos peruanos.webp" },
 ];
 
 let cart = [];
@@ -171,7 +178,7 @@ function generateTicket() {
 
     const ticketContainer = document.createElement('div');
     ticketContainer.classList.add('ticket-style');
-    ticketContainer.style.width = '300px';
+    ticketContainer.style.width = '400px'; /* 300px ES EL PREDETERMINADO */
     ticketContainer.style.padding = '1rem';
     ticketContainer.style.fontFamily = 'monospace';
     ticketContainer.style.backgroundColor = '#fff';
