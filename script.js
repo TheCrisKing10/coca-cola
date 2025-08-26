@@ -2,7 +2,7 @@
 const products = [
     { id: 101, name: "Coca-Cola 3L Ret (6 pack)", price: 207.00, piecesPerPackage: 6,  image: "coca-cola 3l ret.webp" },
     { id: 102, name: "Coca-Cola 2.5L Ret (8 pack)", price: 240.00, piecesPerPackage: 8,  image: "coca-cola 2.5l ret.webp" },
-    { id: 103, name: "Coca-Cola 1.25L Ret (8 pack)", price: 140.00, piecesPerPackage: 8,  image: "coca-cola 1.25l ret.webp" },
+    { id: 103, name: "Coca-Cola 1.25L Ret (8 pack)", price: 136.00, piecesPerPackage: 8,  image: "coca-cola 1.25l ret.webp" },
     { id: 104, name: "Coca-Cola 500ml Ret (24 pack)", price: 318.00, piecesPerPackage: 24,  image: "coca-cola 500ml.webp" },
     { id: 105, name: "Valle Frut 2.5L Ret (8 pack)", price: 224.00, piecesPerPackage: 8,  image: "valle frut 2.5l ret.webp" },
     { id: 106, name: "Coca-Cola 3L (4 pack)", price: 156.00, piecesPerPackage: 4, image: "coca-cola 3l.webp" },
@@ -29,7 +29,7 @@ const products = [
     { id: 127, name: "Monster Green 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero 473ml.webp" },
     { id: 128, name: "Monster White 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero ultra 473ml.webp" },
     { id: 129, name: "Santa Clara Entera 1L (6 pack)", price: 159.00, piecesPerPackage: 6, image: "santa clara entera 1l.webp" },
-    { id: 130, name: "Santa Clara Deslactosada 1L (6 pack)", price: 147.00, piecesPerPackage: 6, image: "santa clara deslactosada 1l.webp" },
+    { id: 130, name: "Santa Clara Deslactosada 1L (6 pack)", price: 164.00, piecesPerPackage: 6, image: "santa clara deslactosada 1l.webp" },
     { id: 131, name: "Santa Clara Fresa 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara fresa 180ml.webp" },
     { id: 132, name: "Santa Clara Vainilla 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara vainilla 180ml.webp" },
     { id: 133, name: "Santa Clara Chocolate 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara chocolate 180ml.webp" },
@@ -229,3 +229,4 @@ productsContainer.addEventListener('click', handleCart);
 cartItemsContainer.addEventListener('click', handleCart);
 searchInput.addEventListener('input', filterProducts);
 checkoutBtn.addEventListener('click', generateTicket);
+
