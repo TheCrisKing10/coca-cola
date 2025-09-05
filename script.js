@@ -1,52 +1,53 @@
+/// LISTA DE PRECIOS FINALIZADO EL 02/SEPTIEMBRE/2025
+
 // Definición de los productos
 const products = [
-    { id: 101, name: "Coca-Cola 3L Ret (6 pack)", price: 207.00, piecesPerPackage: 6,  image: "coca-cola 3l ret.webp" },
-    { id: 102, name: "Coca-Cola 2.5L Ret (8 pack)", price: 240.00, piecesPerPackage: 8,  image: "coca-cola 2.5l ret.webp" },
-    { id: 103, name: "Coca-Cola 1.25L Ret (8 pack)", price: 136.00, piecesPerPackage: 8,  image: "coca-cola 1.25l ret.webp" },
-    { id: 104, name: "Coca-Cola 500ml Ret (24 pack)", price: 318.00, piecesPerPackage: 24,  image: "coca-cola 500ml.webp" },
-    { id: 105, name: "Valle Frut 2.5L Ret (8 pack)", price: 224.00, piecesPerPackage: 8,  image: "valle frut 2.5l ret.webp" },
-    { id: 106, name: "Coca-Cola 3L (4 pack)", price: 156.00, piecesPerPackage: 4, image: "coca-cola 3l.webp" },
-    { id: 107, name: "Coca-Cola 1.75L (8 pack)", price: 255.00, piecesPerPackage: 8, image: "coca-cola 1.75l.webp" },
-    { id: 108, name: "Coca-Cola 1.35L (6 pack)", price: 164.00, piecesPerPackage: 6, image: "coca-cola 1.35l.webp" },
+    { id: 101, name: "Coca-Cola 3L Ret (6 pack) Preciada", price: 178.00, piecesPerPackage: 6,  image: "coca-cola 3l ret.webp" },
+    { id: 102, name: "Coca-Cola 1.25L Ret (8 pack) Preciada", price: 136.00, piecesPerPackage: 8,  image: "coca-cola 1.25l ret.webp" },
+    { id: 103, name: "Coca-Cola 500ml Ret (24 pack)", price: 318.00, piecesPerPackage: 24,  image: "coca-cola 500ml.webp" },
+    { id: 104, name: "Valle Frut 2.5L Ret (8 pack)", price: 224.00, piecesPerPackage: 8,  image: "valle frut 2.5l ret.webp" },
+    { id: 105, name: "Coca-Cola 3L (4 pack)", price: 156.00, piecesPerPackage: 4, image: "coca-cola 3l.webp" },
+    { id: 106, name: "Coca-Cola 1.75L (4 pack)", price: 111.00, piecesPerPackage: 4, image: "coca-cola 1.75l.webp" },
+    { id: 107, name: "Coca-Cola 1.75L (8 pack)", price: 223.00, piecesPerPackage: 8, image: "coca-cola 1.75l.webp" },
+    { id: 108, name: "Coca-Cola 1.35L (6 pack)", price: 140.00, piecesPerPackage: 6, image: "coca-cola 1.35l.webp" },
     { id: 109, name: "Coca-Cola 600ml (24 pack)", price: 424.00, piecesPerPackage: 24, image: "coca-cola 600ml.webp" },
     { id: 110, name: "Coca-Cola 400ml (12 pack)", price: 159.00, piecesPerPackage: 12, image: "coca-cola 400ml.webp" },
     { id: 111, name: "Coca-Cola 355ml Choby (12 pack)", price: 126.00, piecesPerPackage: 12, image: "coca-cola 355ml choby.webp" },
-    { id: 112, name: "Coca-Cola 250ml (12 pack)", price: 127.00, piecesPerPackage: 12, image: "coca-cola 250ml.webp" },
     { id: 113, name: "Coca-Cola 355ml Lata (12 pack)", price: 212.00, piecesPerPackage: 12, image: "coca-cola 355ml lata.webp" },
     { id: 114, name: "Coca-Cola 3L Zero (4 pack)", price: 149.00, piecesPerPackage: 4, image: "coca-cola 3l zero.webp" },
     { id: 115, name: "Coca-Cola 600ml Zero (12 pack)", price: 159.00, piecesPerPackage: 12, image: "coca-cola 600ml zero.webp" },
-    { id: 116, name: "Coca-Cola 355ml Zero Choby (12 pack)", price: 78.00, piecesPerPackage: 12, image: "coca-cola 355ml choby zero.webp" },
-    { id: 117, name: "Fanta 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "fanta 3l.webp" },
-    { id: 118, name: "Fresca 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "fresca 3l.webp" },
-    { id: 119, name: "Sidral Mundet 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "sidral mundet 3l.webp" },
-    { id: 120, name: "Sprite 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "sprite 3l.webp" },
-    { id: 121, name: "Valle Frut 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "valle frut 3l.webp" },
-    { id: 122, name: "Delaware Punch 2L (4 pack)", price: 88.00, piecesPerPackage: 4, image: "delaware 2l.webp" },
-    { id: 123, name: "Mundet Ameyal 2L (4 pack)", price: 87.50, piecesPerPackage: 4, image: "sidral ameyal 2l.webp" },
-    { id: 124, name: "Mundet Manzana 2L  (4 pack)", price: 87.50, piecesPerPackage: 4, image: "sidral manzana 2l.webp" },
-    { id: 125, name: "Predator Gold Strike 473ml (6 pack)", price: 100.00, piecesPerPackage: 6, image: "predator energy 473ml.webp" },
-    { id: 126, name: "Predator Purple Rain 473ml (6 pack)", price: 100.00, piecesPerPackage: 6, image: "predator energy purple 473ml.webp" },
-    { id: 127, name: "Monster Green 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero 473ml.webp" },
-    { id: 128, name: "Monster White 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero ultra 473ml.webp" },
-    { id: 129, name: "Santa Clara Entera 1L (6 pack)", price: 159.00, piecesPerPackage: 6, image: "santa clara entera 1l.webp" },
-    { id: 130, name: "Santa Clara Deslactosada 1L (6 pack)", price: 164.00, piecesPerPackage: 6, image: "santa clara deslactosada 1l.webp" },
-    { id: 131, name: "Santa Clara Fresa 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara fresa 180ml.webp" },
-    { id: 132, name: "Santa Clara Vainilla 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara vainilla 180ml.webp" },
-    { id: 133, name: "Santa Clara Chocolate 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara chocolate 180ml.webp" },
-    { id: 134, name: "Santa Clara Capuccino 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara capuccino 180ml.webp" },
-    { id: 135, name: "Tubi-Papa Original (10 pack)", price: 160.50, piecesPerPackage: 10, image: "papa sol original.webp" },
-    { id: 136, name: "Tubi-Papa Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol enchilado.webp" },
-    { id: 137, name: "Tubi-Papa No Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol no enchilado.webp" },
-    { id: 138, name: "Isadora Refritos Bayos 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos bayos.webp" },
-    { id: 139, name: "Isadora Refritos Negros 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos negros.webp" },
-    { id: 140, name: "Isadora Refritos Peruanos 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos peruanos.webp" },
+    { id: 116, name: "Coca-Cola 355ml Zero Choby (12 pack)", price: 74.00, piecesPerPackage: 12, image: "coca-cola 355ml choby zero.webp" },
+    { id: 117, name: "Fizz Mezcla 235ml Lata (12 pack)", price: 80.00, piecesPerPackage: 12, image: "fizz mezcla.webp" },
+    { id: 118, name: "Fanta 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "fanta 3l.webp" },
+    { id: 119, name: "Fresca 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "fresca 3l.webp" },
+    { id: 120, name: "Sidral Mundet 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "sidral mundet 3l.webp" },
+    { id: 121, name: "Sprite 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "sprite 3l.webp" },
+    { id: 122, name: "Valle Frut 3L (4 pack)", price: 137.00, piecesPerPackage: 4, image: "valle frut 3l.webp" },
+    { id: 123, name: "Delaware Punch 2L (4 pack)", price: 88.00, piecesPerPackage: 4, image: "delaware 2l.webp" },
+    { id: 124, name: "Mundet Ameyal 2L (4 pack)", price: 87.50, piecesPerPackage: 4, image: "sidral ameyal 2l.webp" },
+    { id: 125, name: "Mundet Manzana 2L  (4 pack)", price: 87.50, piecesPerPackage: 4, image: "sidral manzana 2l.webp" },
+    { id: 126, name: "Predator Gold Strike 473ml (6 pack)", price: 100.00, piecesPerPackage: 6, image: "predator energy 473ml.webp" },
+    { id: 127, name: "Predator Purple Rain 473ml (6 pack)", price: 100.00, piecesPerPackage: 6, image: "predator energy purple 473ml.webp" },
+    { id: 128, name: "Monster Green 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero 473ml.webp" },
+    { id: 129, name: "Monster White 473ml (4 pack)", price: 124.00, piecesPerPackage: 4, image: "monster energy zero ultra 473ml.webp" },
+    { id: 130, name: "Santa Clara Entera 1L (6 pack)", price: 159.00, piecesPerPackage: 6, image: "santa clara entera 1l.webp" },
+    { id: 131, name: "Santa Clara Deslactosada 1L (6 pack)", price: 147.00, piecesPerPackage: 6, image: "santa clara deslactosada 1l.webp" },
+    { id: 132, name: "Santa Clara Fresa 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara fresa 180ml.webp" },
+    { id: 133, name: "Santa Clara Vainilla 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara vainilla 180ml.webp" },
+    { id: 134, name: "Santa Clara Chocolate 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara chocolate 180ml.webp" },
+    { id: 135, name: "Santa Clara Capuccino 180ml (4 pack)", price: 47.00, piecesPerPackage: 4, image: "santa clara capuccino 180ml.webp" },
+    { id: 136, name: "Tubi-Papa Original (10 pack)", price: 160.50, piecesPerPackage: 10, image: "papa sol original.webp" },
+    { id: 137, name: "Tubi-Papa Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol enchilado.webp" },
+    { id: 138, name: "Tubi-Papa No Enchilado (10 pack)", price: 166.50, piecesPerPackage: 10, image: "papa sol no enchilado.webp" },
+    { id: 139, name: "Isadora Refritos Bayos 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos bayos.webp" },
+    { id: 140, name: "Isadora Refritos Negros 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos negros.webp" },
+    { id: 141, name: "Isadora Refritos Peruanos 430g", price: 15.50, piecesPerPackage: 1, image: "isadora frijoles refritos peruanos.webp" },
 ];
 
 let cart = [];
 
 const productsContainer = document.getElementById('products');
 const cartItemsContainer = document.getElementById('cart-items');
-const subtotalElement = document.getElementById('subtotal');
 const totalElement = document.getElementById('total');
 const searchInput = document.getElementById('search-input');
 const checkoutBtn = document.getElementById('checkout-btn');
@@ -90,14 +91,13 @@ function renderProducts(filteredProducts) {
 // Renderiza los items del carrito
 function renderCart() {
     cartItemsContainer.innerHTML = '';
-    let subtotal = 0;
+    let total = 0;
 
     // Ordena el carrito por ID de forma ascendente
     const sortedCart = cart.sort((a, b) => a.id - b.id);
 
     if (sortedCart.length === 0) {
         cartItemsContainer.innerHTML = '<p style="text-align: center; color: #666;">Tu carrito está vacío.</p>';
-        subtotalElement.textContent = '$0,00';
         totalElement.textContent = '$0,00';
         return;
     }
@@ -121,12 +121,11 @@ function renderCart() {
             <button class="remove-item-btn" data-id="${item.id}">X</button>
         `;
         cartItemsContainer.appendChild(cartItem);
-        subtotal += item.price * item.quantity;
+        total += item.price * item.quantity;
     });
 
-    // Actualiza los totales en tiempo real
-    subtotalElement.textContent = `$${formatPrice(subtotal)}`;
-    totalElement.textContent = `$${formatPrice(subtotal)}`;
+    // Solo mostramos el total
+    totalElement.textContent = `$${formatPrice(total)}`;
 }
 
 // Lógica del carrito de compras
@@ -178,7 +177,7 @@ function generateTicket() {
 
     const ticketContainer = document.createElement('div');
     ticketContainer.classList.add('ticket-style');
-    ticketContainer.style.width = '400px'; /* 300px ES EL PREDETERMINADO */
+    ticketContainer.style.width = '430px'; /* 300px ES EL PREDETERMINADO */
     ticketContainer.style.padding = '1rem';
     ticketContainer.style.fontFamily = 'monospace';
     ticketContainer.style.backgroundColor = '#fff';
@@ -206,15 +205,16 @@ function generateTicket() {
             `).join('')}
         </div>
         <div style="border-top: 1px dashed #000; margin-top: 1rem; padding-top: 1rem;">
-            <p style="display: flex; justify-content: space-between; font-weight: bold;"><span>Subtotal:</span><span>${subtotalElement.textContent}</span></p>
-            <p style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem;"><span>Total:</span><span>${totalElement.textContent}</span></p>
+            <p style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem;">
+                <span>Total:</span><span>${totalElement.textContent}</span>
+            </p>
         </div>
         <p style="text-align: center; margin-top: 1rem; font-size: 0.8rem;">¡Gracias por tu compra!</p>
     `;
     ticketContainer.innerHTML = ticketContent;
     document.body.appendChild(ticketContainer);
 
-    html2canvas(ticketContainer, { scale: 2 }).then(canvas => {
+    html2canvas(ticketContainer, { scale: 3 }).then(canvas => {
         const image = canvas.toDataURL('image/png', 1.0);
         const link = document.createElement('a');
         link.href = image;
@@ -229,4 +229,3 @@ productsContainer.addEventListener('click', handleCart);
 cartItemsContainer.addEventListener('click', handleCart);
 searchInput.addEventListener('input', filterProducts);
 checkoutBtn.addEventListener('click', generateTicket);
-
